@@ -1,0 +1,44 @@
+[
+  {
+    "title": "The Future of Artificial Intelligence",
+    "speakers": ["Dr. Evelyn Reed"],
+    "category": ["AI", "Machine Learning"],
+    "duration": 60,
+    "description": "A deep dive into the latest advancements in AI and what to expect in the coming years."
+  },
+  {
+    "title": "Building Scalable Web Applications",
+    "speakers": ["John Smith", "Jane Doe"],
+    "category": ["Web Development", "Scalability"],
+    "duration": 60,
+    "description": "Learn the best practices for building web applications that can handle millions of users."
+  },
+  {
+    "title": "Cybersecurity in the Modern Age",
+    "speakers": ["Alex Chen"],
+    "category": ["Cybersecurity"],
+    "duration": 60,
+    "description": "An overview of the current cybersecurity landscape and how to protect your systems."
+  },
+  {
+    "title": "The Power of Quantum Computing",
+    "speakers": ["Dr. Ben Carter"],
+    "category": ["Quantum Computing", "Science"],
+    "duration": 60,
+    "description": "An introduction to the mind-bending world of quantum computing and its potential applications."
+  },
+  {
+    "title": "Mastering UI/UX Design",
+    "speakers": ["Maria Garcia"],
+    "category": ["UI/UX", "Design"],
+    "duration": 60,
+    "description": "Learn how to create intuitive and beautiful user interfaces that your users will love."
+  },
+  {
+    "title": "A-I-for-All: From Zero to Hero",
+    "speakers": ["David Lee"],
+    "category": ["AI", "Beginner"],
+    "duration": 60,
+    "description": "This talk is for anyone who wants to get started with AI, even with no prior experience."
+  }
+]
