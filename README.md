@@ -1,93 +1,67 @@
-# Tech Talk Event Website
+# Tech Talk Event Schedule
 
-This project is a simple website for a 1-day tech talk event. It serves static frontend content and provides an API endpoint to retrieve talk details.
+A simple web application to display the schedule for a one-day tech talk event.
 
 ## Features
 
--   Serves static HTML, CSS, and JavaScript files for the event frontend.
--   Provides a `/api/talks` endpoint to fetch event talk data from a `talks.json` file.
--   Built with Express.js for the backend.
+*   **Dynamic Schedule:** The event schedule is dynamically generated from a JSON data source.
+*   **Search by Category:** Users can filter the schedule by talk category in real-time.
+*   **Lunch Break:** A lunch break is automatically included in the schedule.
 
-## Technologies Used
+## Getting Started
 
--   Node.js
--   Express.js
--   HTML5
--   CSS3
--   JavaScript
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Installation
+### Prerequisites
 
-To set up the project locally:
+You need to have [Node.js](https://nodejs.org/) installed on your machine.
 
-1.  **Clone the repository:**
+### Installation
+
+1.  Clone the repository to your local machine.
+2.  Navigate to the project directory:
     ```bash
-    git clone https://github.com/blasiusneri/gemini-event-talks-app.git
-    cd gemini-event-talks-app
+    cd KataMutiara
     ```
-
-2.  **Install dependencies:**
+3.  Install the dependencies:
     ```bash
     npm install
     ```
 
-## Usage
+### Running the Application
 
-To run the application locally:
+To start the server, run the following command:
 
 ```bash
 npm start
 ```
 
-The server will start on `http://localhost:3000` (or a port specified by the `PORT` environment variable).
-
-## API Endpoints
-
-### `GET /api/talks`
-
-Returns a JSON array of talk details.
-
-**Example Response:**
-
-```json
-[
-  {
-    "id": 1,
-    "title": "Introduction to Gemini CLI",
-    "speaker": "AI Assistant",
-    "time": "10:00 AM",
-    "description": "An overview of the Gemini Command Line Interface and its capabilities."
-  },
-  {
-    "id": 2,
-    "title": "Deploying with Cloud Run",
-    "speaker": "Cloud Expert",
-    "time": "11:00 AM",
-    "description": "A guide to deploying applications to Google Cloud Run."
-  }
-]
-```
-*(Note: The actual content of `talks.json` will dictate the response.)*
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
 ## Project Structure
 
-```
-.
-├───.git/
-├───node_modules/
-├───public/
-│   ├───index.html
-│   ├───script.js
-│   └───style.css
-├───.gitignore
-├───index.js         (Express.js server)
-├───package-lock.json
-├───package.json
-└───talks.json       (Data for API)
-```
+*   `index.js`: The main server file, built with Node.js and Express. It serves the static files and the talk data.
+*   `talks.json`: The JSON file containing the data for all the tech talks.
+*   `public/`: The directory containing all the client-side files.
+    *   `index.html`: The main HTML file for the application.
+    *   `script.js`: The client-side JavaScript that fetches data, renders the schedule, and handles user interactions.
+    *   `style.css`: The stylesheet for the application.
 
-## Deployment
+## API Endpoints
 
-This application is suitable for deployment on platforms like Google Cloud Run, given its web server architecture and use of the `PORT` environment variable.
+### GET /api/talks
 
----
+*   **Description:** Retrieves the list of all tech talks.
+*   **Response:** A JSON array of talk objects.
+*   **Example Response:**
+    ```json
+    [
+      {
+        "title": "The Future of Artificial Intelligence",
+        "speakers": ["Dr. Evelyn Reed"],
+        "category": ["AI", "Machine Learning"],
+        "duration": 60,
+        "description": "A deep dive into the latest advancements in AI and what to expect in the coming years."
+      }
+    ]
+    ```
